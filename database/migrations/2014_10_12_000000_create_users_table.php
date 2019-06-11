@@ -20,9 +20,9 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->string('language')->default("ja");
-            $table->string('theme_primary')->default("indigo");
-            $table->string('theme_secondary')->default("pink");
+            $table->string('language')->default('ja');
+            $table->string('theme_primary')->default('indigo');
+            $table->string('theme_secondary')->default('pink');
             $table->timestamps();
         });
     }
